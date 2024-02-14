@@ -8,3 +8,11 @@ burger.addEventListener('click',()=>{
   button.classList.toggle('v-class')
   navbar.classList.toggle('h-class')
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Check if the user is not logged in (isLoggedIn flag is not set)
+  if (!localStorage.getItem('isLoggedIn')) {
+    // Redirect the user to the login page
+    window.location.href = 'login.html';
+  }
+});
