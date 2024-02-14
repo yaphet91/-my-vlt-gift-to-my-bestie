@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+
+*{
+  font-family: 'Roboto', Arial;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1149ff;
+  background: linear-gradient(to right, #f8f8f8, #c9d6ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 7px;
+  align-items: center;
+  justify-content: center;/**/
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.7px);
+  border-radius: 17px;
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%; 
+  min-width: 444px;
+  min-height: 440px;
+}
+
+.container input {
+  background-color: #eee;
+  width: 100%;
+  border: none;
+  border-radius: 9px;
+  margin: 8px 0;
+  padding: 15px 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.container h1 {
+  font-family: "Montez", sans-serif;
+}
+
+.container button {
+  background-color: #512da8;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  padding: 10px 44px;
+  margin-top: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #512da8;
+  background: linear-gradient(to right, #5c6bc0, #5e3dab);
+  border-radius: 150px 0 0 100px;
+  height: 100%;
+  width: 100%;
+  color: white;  
+  padding: 44px;
+}
+
+.toggle-panel {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.toggle p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.toggle h1 {
+  text-align: center;
+}
