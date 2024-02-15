@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Check if the username and password match the expected values
     if (username === 'tiobesta' && password === 'my1&onlyBestie') {
+      // Set the isLoggedIn flag to true
+      localStorage.setItem('isLoggedIn', 'true');
       // Redirect to the vlt.html page
       window.location.href = 'index.html';
     } else {
