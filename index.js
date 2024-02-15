@@ -10,8 +10,8 @@ burger.addEventListener('click',()=>{
 })
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Check if the user is not logged in (isLoggedIn flag is not set)
-  if (!localStorage.getItem('isLoggedIn')) {
+  // Check if the user is not logged in (isLoggedIn flag is not set or is false)
+  if (!localStorage.getItem('isLoggedIn') || localStorage.getItem('isLoggedIn') !== 'true') {
     // Redirect the user to the login page
     window.location.href = 'login.html';
   }
